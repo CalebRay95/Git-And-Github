@@ -1,0 +1,23 @@
+# Python virtual environment — never commit this
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter auto-generated checkpoints — nobody needs these
+.ipynb_checkpoints/
+
+# OS clutter
+.DS_Store       # Mac drops these everywhere like breadcrumbs
+Thumbs.db       # Windows does the same
+
+# Editor files
+.vscode/
+*.code-workspace
+
+# Temp / build scripts used during setup
+_build*.py
+_check*.py
+_tmp*.py

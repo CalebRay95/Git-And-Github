@@ -12,7 +12,7 @@
 ##  The Origin Story (a.k.a. Why This Exists)
 
 You know that feeling when you've been staring at a `CONFLICT` message for 45 minutes,  
-your tea has gone cold, your girlfriend has texted "you coming or not?",  
+your coffee has gone cold, your girlfriend has texted "you coming or not?",  
 and Stack Overflow has 12 tabs open — all saying something different?
 
 Yeah. That's called **being a software engineer**. Welcome to the club. There's no exit.

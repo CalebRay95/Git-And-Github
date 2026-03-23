@@ -1,15 +1,15 @@
-# 🧑‍💻 Git & GitHub — The Complete Handbook  
+#  Git & GitHub — The Complete Handbook  
 ### *From "what is a commit?" to "yes, I actually understand rebase now"*
 
 ---
 
 > *Once upon a time, a developer opened a terminal, typed `git push --force`, and destroyed 3 days of their team's work.*
 > *That developer was not me. But I watched it happen in real time.*
-> *This handbook exists so neither of us becomes that person.* 📖
+> *This handbook exists so neither of us becomes that person.* 
 
 ---
 
-## 👋 The Origin Story (a.k.a. Why This Exists)
+##  The Origin Story (a.k.a. Why This Exists)
 
 You know that feeling when you've been staring at a `CONFLICT` message for 45 minutes,  
 your tea has gone cold, your girlfriend has texted "you coming or not?",  
@@ -26,12 +26,12 @@ stepped on all the landmines and wants to warn you before you do too.
 
 ---
 
-### 📦 What's Inside This Vault of Suffering and Wisdom
+###  What's Inside This Vault of Suffering and Wisdom
 
 | Topic | Reality Check |
 |-------|---------------|
 | Every Git command you'll actually use | With examples that aren't `git commit -m "fix"` (we have standards) |
-| Windows 🪟 Linux 🐧 Mac 🍎 specific steps | Because "just type this" never works the same on all three |
+| Windows  Linux  Mac  specific steps | Because "just type this" never works the same on all three |
 | Authentication — PAT classic, fine-grained, SSH, GitHub CLI | GitHub changed auth *again*. Yes, again. It's fine. It's fine. |
 | Branching, merging, rebasing, cherry-picking | The Four Horsemen of "wait what just happened to my code" |
 | Undoing mistakes | The most-used feature in software engineering, don't @ me |
@@ -45,70 +45,70 @@ stepped on all the landmines and wants to warn you before you do too.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 *Organised like a senior dev's brain: everything has a place, and the place actually makes sense.*
 
 ```
 git-and-github/
-│
-├── 📄 README.md                          ← You are here. The whole map.
-│
-├── 📁 00_cheatsheet/
-│   └── 01_quick_reference.ipynb         ← ⚡ All commands on one page (bookmark this NOW)
-│
-├── 📁 01_basics/
-│   ├── 01_what_is_git.ipynb             ← Git vs GitHub — yes they're different, no you're not dumb
-│   ├── 02_installation.ipynb            ← Install on Windows / Linux / Mac (with zero drama)
-│   └── 03_core_concepts.ipynb           ← Key terms: repo, commit, branch, HEAD, staging...
-│
-├── 📁 02_setup/
-│   ├── 01_configuration.ipynb           ← git config, aliases, identity (tell Git who you are)
-│   └── 02_authentication.ipynb          ← PAT classic & fine-grained, SSH, gh CLI — all explained
-│
-├── 📁 03_workflow/
-│   ├── 01_complete_workflow.ipynb       ← Clone/init → edit → add → commit → push. The daily loop.
-│   └── 02_team_workflow.ipynb           ← Multi-dev sync, branch protection, review hell cycles
-│
-├── 📁 04_commands/
-│   ├── 01_status_log_diff.ipynb         ← status, log, diff, blame, reflog
-│   ├── 02_add_commit.ipynb              ← add, commit, amend, writing commits that don't say "fix"
-│   ├── 03_push_pull_remote.ipynb        ← push, pull, fetch, remote juggling
-│   ├── 04_stash_tags_clean.ipynb        ← stash (panic mode), tags, clean, rm, mv
-│   ├── 05_submodules_bare.ipynb         ← git init --bare, submodules (advanced stuff, flex worthy)
-│   └── 06_hooks_bisect.ipynb            ← pre-commit hooks, git bisect (find who broke prod)
-│
-├── 📁 05_branching/
-│   ├── 01_branches.ipynb                ← Create, switch, rename, delete — branch like a pro
-│   ├── 02_merging.ipynb                 ← Merge + conflict resolution (the CONFLICT moment)
-│   └── 03_rebase_cherrypick.ipynb       ← Rebase + interactive -i + cherry-pick (power moves)
-│
-├── 📁 06_undoing/
-│   └── 01_recovery.ipynb               ← restore, reset, revert, reflog — undo everything
-│
-├── 📁 07_github_features/
-│   ├── 01_pull_requests_forks.ipynb    ← PRs, forks, open source contribution flow
-│   └── 02_gitignore_actions.ipynb      ← .gitignore patterns, GitHub Actions CI/CD
-│
-├── 📁 08_gitlens_vscode/
-│   └── 01_gitlens_guide.ipynb          ← GitLens: blame, branches, free Commit Graph (v14+)
-│
-├── 📁 09_troubleshooting/
-│   └── 01_errors_fixes.ipynb           ← 8 common errors + exact fixes. You'll need this.
-│
-└── 📁 10_pro_tips/
-    └── 01_tips.ipynb                   ← Aliases, strategies, golden rules — the good stuff
+
+  README.md                          ← You are here. The whole map.
+
+  00_cheatsheet/
+    01_quick_reference.ipynb         ←  All commands on one page (bookmark this NOW)
+
+  01_basics/
+    01_what_is_git.ipynb             ← Git vs GitHub — yes they're different, no you're not dumb
+    02_installation.ipynb            ← Install on Windows / Linux / Mac (with zero drama)
+    03_core_concepts.ipynb           ← Key terms: repo, commit, branch, HEAD, staging...
+
+  02_setup/
+    01_configuration.ipynb           ← git config, aliases, identity (tell Git who you are)
+    02_authentication.ipynb          ← PAT classic & fine-grained, SSH, gh CLI — all explained
+
+  03_workflow/
+    01_complete_workflow.ipynb       ← Clone/init → edit → add → commit → push. The daily loop.
+    02_team_workflow.ipynb           ← Multi-dev sync, branch protection, review hell cycles
+
+  04_commands/
+    01_status_log_diff.ipynb         ← status, log, diff, blame, reflog
+    02_add_commit.ipynb              ← add, commit, amend, writing commits that don't say "fix"
+    03_push_pull_remote.ipynb        ← push, pull, fetch, remote juggling
+    04_stash_tags_clean.ipynb        ← stash (panic mode), tags, clean, rm, mv
+    05_submodules_bare.ipynb         ← git init --bare, submodules (advanced stuff, flex worthy)
+    06_hooks_bisect.ipynb            ← pre-commit hooks, git bisect (find who broke prod)
+
+  05_branching/
+    01_branches.ipynb                ← Create, switch, rename, delete — branch like a pro
+    02_merging.ipynb                 ← Merge + conflict resolution (the CONFLICT moment)
+    03_rebase_cherrypick.ipynb       ← Rebase + interactive -i + cherry-pick (power moves)
+
+  06_undoing/
+    01_recovery.ipynb               ← restore, reset, revert, reflog — undo everything
+
+  07_github_features/
+    01_pull_requests_forks.ipynb    ← PRs, forks, open source contribution flow
+    02_gitignore_actions.ipynb      ← .gitignore patterns, GitHub Actions CI/CD
+
+  08_gitlens_vscode/
+    01_gitlens_guide.ipynb          ← GitLens: blame, branches, free Commit Graph (v14+)
+
+  09_troubleshooting/
+    01_errors_fixes.ipynb           ← 8 common errors + exact fixes. You'll need this.
+
+  10_pro_tips/
+     01_tips.ipynb                   ← Aliases, strategies, golden rules — the good stuff
 ```
 
 ---
 
-## 📚 Full Chapter Navigation
+##  Full Chapter Navigation
 
 *Because scrolling through folders is what we do at 2am when we should be sleeping.*
 
 | # | Chapter | File | What You'll Learn |
 |---|---------|------|-------------------|
-| ⚡ | **Quick Reference** | [00_cheatsheet/01_quick_reference](00_cheatsheet/01_quick_reference.ipynb) | Every command in one place. Print it. Put it on your wall. |
+|  | **Quick Reference** | [00_cheatsheet/01_quick_reference](00_cheatsheet/01_quick_reference.ipynb) | Every command in one place. Print it. Put it on your wall. |
 | 1 | What is Git? | [01_basics/01_what_is_git](01_basics/01_what_is_git.ipynb) | Git vs GitHub. Yes they're different. No, "the cloud" is not Git. |
 | 2 | Installation | [01_basics/02_installation](01_basics/02_installation.ipynb) | Install on Windows/Linux/Mac. Different pain, same destination. |
 | 3 | Core Concepts | [01_basics/03_core_concepts](01_basics/03_core_concepts.ipynb) | Repo, commit, branch, HEAD, staging — the vocab that unlocks everything |
@@ -134,7 +134,7 @@ git-and-github/
 
 ---
 
-## 🚀 How to Actually Use This
+##  How to Actually Use This
 
 *Like reading a textbook but written by someone who was also confused once.*
 
@@ -154,12 +154,12 @@ git-and-github/
         → (you're dangerous now)
 ```
 
-> 💡 **Pro tip:** Don't try to memorize everything. Learn the *pattern*, use the cheatsheet for the rest.  
+>  **Pro tip:** Don't try to memorize everything. Learn the *pattern*, use the cheatsheet for the rest.  
 > Seniors don't memorize commands — they just know where to look faster.
 
 ---
 
-## 🛠️ Tools That Power This Handbook
+##  Tools That Power This Handbook
 
 | Tool | What It Does | Hot Take |
 |------|-------------|----------|
@@ -171,7 +171,7 @@ git-and-github/
 
 ---
 
-## 🎭 Real Talk — Chapters You'll Definitely Skip Then Come Back to Crying
+##  Real Talk — Chapters You'll Definitely Skip Then Come Back to Crying
 
 | Chapter | When You'll Actually Open It |
 |---------|------------------------------|
@@ -184,7 +184,7 @@ git-and-github/
 
 ---
 
-## ⚡ Quick Command Reference (The "I Need This NOW" Section)
+##  Quick Command Reference (The "I Need This NOW" Section)
 
 *For when you're mid-panic and don't have time to open a notebook.*
 
@@ -216,5 +216,5 @@ git blame <file>                  # Who wrote this line? (find the culprit)
 
 ---
 
-*Made with 😤 frustration, ☕ coffee, and the iron will to never Google*  
+*Made with  frustration,  coffee, and the iron will to never Google*  
 *"how to undo a git commit" more than once. (Reader, I Googled it 47 more times.)*
